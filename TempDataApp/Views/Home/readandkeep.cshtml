@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>readandkeep</title>
+</head>
+<body>
+    <div> 
+        <h2>
+            @{
+                int num1 = (int)TempData["n"];
+                if (num1 >= 100)
+                {
+                    TempData.Keep("n");
+                }
+            }
+
+            Value Is Kept For Next Request  : @num1<br />
+            <a href="~/Home/Index">Back To Home</a>
+
+        </h2>
+    </div>
+</body>
+</html>

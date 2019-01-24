@@ -1,0 +1,2 @@
+F:\programm2018\muktar\DOT NET\MVCBATCH47\mvcbatch47\viewengineapp\obj\Debug\viewengineapp.csprojAssemblyReference.cache
+F:\programm2018\muktar\DOT NET\MVCBATCH47\mvcbatch47\viewengineapp\obj\Debug\viewengineapp.csproj.CoreCompileInputs.cache

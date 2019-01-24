@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>normalread</title>
+</head>
+<body>
+    <div> 
+        <h1>
+            This Is Normal Read : @TempData["n"].ToString()<br />
+            Not Maintained For Next Request <br />
+            
+            @*@{ //incase of keep
+                
+                TempData.Keep("n");
+            }*@
+            
+            
+            <a href="~/Home/Index">Back To Home</a>
+
+        </h1>
+    </div>
+</body>
+</html>

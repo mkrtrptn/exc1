@@ -1,0 +1,24 @@
+﻿@model mvcbankapp.Models.CustomerModel
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>index1</title>
+</head>
+<body>
+    <div style="background-color:gold;font-size:x-large;border-radius:20px;padding:20px">
+        @using (Html.BeginForm("manipulation", "Demo", FormMethod.Post))
+        {
+            @Html.TextBoxFor(c => c.accno, new { @Value = ViewBag.accno }) <input type="submit" value="Search" name="command" class="btn-primary" /> <br /><br />
+            @Html.TextBoxFor(c => c.accname, new { @Value = ViewBag.name })<br /><br />
+            @Html.TextBoxFor(c => c.accbal, new { @Value = ViewBag.bal })<br /><br />
+
+            <input type="submit" value="Delete" name="command" class="btn-warning" />
+            @ViewBag.msg
+        }
+        @Html.ActionLink("Add New", "index", "Demo")
+
+    </div>
+</body>
+</html>

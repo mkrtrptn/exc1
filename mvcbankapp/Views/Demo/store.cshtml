@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+</head>
+<body>
+    <div style="background-color:gold;font-size:x-large;border-radius:20px;padding:20px">
+        @ViewBag.msg
+
+        @Html.ActionLink("Search / Delete", "index1", "Demo")
+        @Html.ActionLink("Add New", "index", "Demo")
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+﻿<div  style="background-color:blanchedalmond;color:black;font-size:x-large" height="50px">
+    @foreach(var i in ViewBag.pages)
+    {
+        string page = "/Home/" + i  ;
+
+        <a href="@page" &nbsp>
+            @i
+        </a>
+    }
+
+</div>

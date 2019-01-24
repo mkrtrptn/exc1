@@ -1,0 +1,26 @@
+﻿<h3>
+    Email Id : abc@gmail.com  class @@9:00 pm
+</h3>
+
+<h2>Sum</h2>
+@{
+    int a = 100;
+    int b = 200;
+}
+<h3>Sum : @(a + b)</h3>
+
+@for (int i = 1; i <= 10; i++)
+{
+    if (i%2==0)
+    {
+        <h3 style="color:yellow">Even:@i</h3>
+
+    }
+    else
+    {
+        <h3 style="color:red">
+            odd: @i
+        </h3>
+    }
+
+}

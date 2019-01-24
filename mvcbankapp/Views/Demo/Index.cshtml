@@ -1,0 +1,21 @@
+﻿@model mvcbankapp.Models.CustomerModel
+
+
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+@using (Html.BeginForm("store", "demo", FormMethod.Post))
+{
+<div style="background-color:gold;font-size:x-large;border-radius:20px;padding:20px">
+    Acc No : @Html.TextBoxFor(c => c.accno)<br /><br />
+    Name : @Html.TextBoxFor(c => c.accname)<br /><br />
+    Balance : @Html.TextBoxFor(c => c.accbal)<br /><br />
+    <input type="submit" value="Save" class="alert-success" />
+    @Html.ActionLink("Search / Delete", "index1", "Demo")
+</div>
+
+    
+
+}
+
+
+

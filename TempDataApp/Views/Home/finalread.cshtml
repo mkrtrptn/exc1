@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>finalread</title>
+</head>
+<body>
+    <div>
+        Final Read Value Should Be nulll
+        @{
+            try
+            {
+                int? num1 = (int)TempData["n"];
+                <h1 style="color:green;font-size:large">Value Maintained from Last Request : @num1</h1>
+            }
+            catch(Exception)
+            {
+                <h2 style="color:red;font-size:large"> Value Not Maintained From Last Requests</h2>
+            }
+            <a href="~/Home/Index">Back To Home</a>
+        }
+    </div>
+</body>
+</html>

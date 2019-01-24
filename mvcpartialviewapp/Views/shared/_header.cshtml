@@ -1,0 +1,17 @@
+﻿<div style="background-color:black; border:7px solid yellow">
+    @{
+        string[] imgs = { "1.jpg", "2.jpg", "3.jpg", "4.jpg" };
+        string[] actions = { "campus", "classrooms", "lab", "canteen" };
+
+        for (int i = 0; i < imgs.Length; i++)
+        {
+            string ipath = "/Images/" + imgs[i];
+            string apath = "/Home/" + actions[i];
+
+            <a href="@apath" title="@actions[i]" >
+            <img src="@ipath" style="border:5px groove red;padding:6px;margin:12px"  height="100" width="100"  /></a>
+        }
+
+
+    }
+</div>

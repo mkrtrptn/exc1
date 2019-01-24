@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>services</title>
+</head>
+<body style="background-color:darkgray;color:white;font-size:x-large">
+    <div style="border-color:yellow;border-radius10px;box-shadow:0 0 10px black">
+        @{
+            Html.RenderAction("header");
+        }
+    </div>
+    <div>
+        Welcome To Services Page
+    </div>
+    <ul style="background-color:brown;color:white;border-radius:5px;padding:5px;">
+         <li>.Net Trainning</li>
+        <li>Angular</li>
+        <li>UI technologies</li>
+        <li>Data Science</li>
+    </ul>
+</body>
+</html>

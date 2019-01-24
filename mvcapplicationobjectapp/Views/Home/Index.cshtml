@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+</head>
+<body style="background-color:beige;color:black;">
+    <div style="background-color:snow;color:black;font-size:x-large;border-radius:3px;box-shadow:0 0 5px yellow">
+        <p> Angular - Its Client Side Programming also used for mobile developement .  </p>
+    </div>
+    <form method="post" action="~/Home/post">
+        <textarea  rows="5" cols="5" name="txtarea" style="border-spacing:5px;background-color:burlywood;color:black;font-size:x-large; border-radius:30px;box-shadow:0 0 20px lightblue;width:100% "></textarea><br />
+        <input type="submit" value="Submit"><br /><br />
+    </form>
+    <div style="background-color:darkslategrey;color:white;border-radius:10px">
+        @Html.Raw(HttpContext.Current.Application["comments"].ToString())
+    </div>
+
+
+
+</body>
+</html>

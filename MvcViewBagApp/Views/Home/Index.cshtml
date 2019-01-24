@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <ul>
+        @foreach(var i in ViewBag.courses)
+        {
+        <li style="color:yellow">@i </li>
+        }
+    </ul>
+
+    <ol>
+        @foreach(var j in (List<int>)ViewData["acno"])
+        {
+            <li style="color:darkorange">@j</li>
+        }
+        
+    </ol>
+
+    <p style="font-size:large"> ViewBag To ViewData</p>
+      <ol type="number">
+          @foreach(var i in (List<string>)ViewData["courses"])
+          {
+              <li style="color:black">@i</li>
+          }
+      </ol>
+
+
+
+</body>
+</html>
