@@ -39,5 +39,14 @@ namespace mvcmoviesgalleryapp.Controllers
             return View(movies);
         }
 
+        public ActionResult Delete(string id)
+        {
+            dalobj.DeleteMovie(id);
+            string filepath = Server.MapPath("/videos/") + id + ".mp4";
+            System.IO.File.Delete(filepath);
+            return View("Display", dalobj.GetMovies());
+        }
+
+
     }
 }

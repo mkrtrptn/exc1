@@ -1,0 +1,50 @@
+﻿@{
+    Layout = null;
+}
+
+@model IEnumerable<mvcmoviesgalleryapp.Models.MovieModel>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Display</title>
+</head>
+<body>
+    <div style="font-size:x-large;color:white;background-color:green;border-radius:20px;border-spacing:20px;padding:20px">
+
+        <table style="font-size:x-large;background-color:burlywood;color:black;border-radius:20px; padding:20px;border-spacing:20px" border="2">
+            <tr>
+                <td>
+                    <table style="font-size:x-large;background-color:aquamarine;color:black;padding:20px;border-spacing:20px" >
+                        <tr>
+                            <th>Movie Id</th>
+                            <th>Movie Name</th>
+                            <th></th>
+                        </tr>
+
+                        @foreach(var m in Model)
+                        {
+                            <tr>
+                                <td>@m.movieid </td>
+                                <td>@m.moviename</td>
+                                <td>
+                                    <a href="~/videos/@m.moviefile" target="frame1">Play</a>
+                                    <a href="~/movie/Delete/@m.movieid" >Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </table>
+                </td>
+
+                <td>
+                    <iframe name="frame1" height="200" width="200" style="border-radius:20px;border:solid;border-bottom-color:darkorange; box-shadow:0 0 10px"></iframe>
+                </td>
+
+
+            </tr>
+        </table> 
+        <a href="~/movie/Index" >Home</a>|
+        <a href="~/Movie/Create">Add Movie</a>
+    </div>
+</body>
+</html>

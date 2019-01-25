@@ -13,15 +13,17 @@
     @using (Html.BeginForm("Store", "Movie", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
 
-        <div style="font-size:x-large;color:white;background-color:green;border-radius:20px;border-spacing:20px;padding:20px">
+    <div style="font-size:x-large;color:white;background-color:green;border-radius:20px;border-spacing:20px;padding:20px">
 
-            Movie Id:      @Html.TextBoxFor(m => m.movieid)<br />
-            Movie Name :   @Html.TextBoxFor(m => m.moviename)<br />
-            Video :       <input type="file" name="fu1" />
-            <input type="submit" value="Save" />
+        Movie Id:      @Html.TextBoxFor(m => m.movieid)<br />
+        Movie Name :   @Html.TextBoxFor(m => m.moviename)<br />
+        Video :       <input type="file" name="fu1" />
+        <input type="submit" value="Save" /><br />
 
 
-        </div>
+        <a href="~/movie/Index">Home</a>|
+        <a href="~/Movie/Display">Display</a>
+    </div>
 
     }
 </body>

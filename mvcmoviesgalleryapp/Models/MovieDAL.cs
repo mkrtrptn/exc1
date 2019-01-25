@@ -37,7 +37,7 @@ namespace mvcmoviesgalleryapp.Models
             while(dr.Read())
             {
                 MovieModel m = new MovieModel();
-                m.moviename = dr["movieid"].ToString();
+                m.movieid = dr["movieid"].ToString();
                 m.moviename = dr["moviename"].ToString();
                 m.moviefile = dr["moviefile"].ToString();
                 movies.Add(m);
